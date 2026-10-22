@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3and mouhib</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fffaf2;
+      color: #34271e;
+      line-height: 1.8;
+    }
+
+    header {
+      background: #244b36;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    header h2 {
+      margin: 0;
+      color: #f5c76b;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    nav a:hover {
+      color: #f5c76b;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 90px 20px;
+      color: white;
+      background:
+        linear-gradient(#0008, #0008),
+        url("https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1400&q=80")
+        center/cover;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin: 0 0 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #e5ad4c;
+      color: #282015;
+      padding: 10px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    section {
+      padding: 45px 8%;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #244b36;
+      font-size: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px #00000012;
+      padding-bottom: 18px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin-bottom: 4px;
+    }
+
+    .price {
+      color: #b16d1c;
+      font-weight: bold;
+    }
+
+    #booking {
+      background: #f1eadc;
+    }
+
+    form {
+      max-width: 480px;
+      margin: auto;
+      display: grid;
+      gap: 12px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 7px;
+      font: inherit;
+      background: white;
+    }
+
+    footer {
+      background: #244b36;
+      color: white;
+      text-align: center;
+      padding: 22px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      header {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>🍽️ مذاق تونس</h2>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#menu">القائمة</a>
+      <a href="#photos">الصور</a>
+      <a href="#contact">اتصل بنا</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="home">
+      <h1>أهلاً بكم في مذاق تونس</h1>
+      <p>أصالة المطبخ التونسي... نكهة لا تُنسى!</p>
+      <a href="#menu" class="btn">اكتشف قائمة الطعام</a>
+    </div>
+
+    <section id="menu">
+      <h2>🍲 قائمة الطعام</h2>
+      <p>اكتشفوا أشهى الأطباق التونسية.</p>
+
+      <div class="cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
+               alt="طبق طعام بالخضروات">
+          <h3>الكسكسي التونسي</h3>
+          <p>نكهة تقليدية غنية بالتوابل.</p>
+          <p class="price">18 دينارًا</p>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80"
+               alt="مقبلات شهية">
+          <h3>البريك</h3>
+          <p>مقرمش ولذيذ على الطريقة التونسية.</p>
+          <p class="price">5 دنانير</p>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=600&q=80"
+               alt="طبق طعام متنوع">
+          <h3>اللبلابي</h3>
+          <p>طبق شعبي تونسي دافئ وشهي.</p>
+          <p class="price">7 دنانير</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="photos">
+      <h2>📸 أطباقنا بالصور</h2>
+      <p>نحرص على تقديم أطباق شهية بمكونات طازجة.</p>
+      <div class="cards">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=600&q=80"
+               alt="طبق من المطبخ">
+          <h3>نكهات أصيلة</h3>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
+               alt="مكونات طازجة">
+          <h3>مكونات طازجة</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking">
+      <h2>📅 احجز طاولتك</h2>
+      <p>املأ المعلومات التالية لطلب حجز.</p>
+
+      <form id="bookingForm">
+        <input name="name" placeholder="الاسم الكامل" required>
+        <input name="phone" type="tel"
+               placeholder="رقم الهاتف" required>
+        <input name="date" type="date" required>
+        <input name="time" type="time" required>
+
+        <select name="people" required>
+          <option value="">عدد الأشخاص</option>
+          <option value="1">شخص واحد</option>
+          <option value="2">شخصان</option>
+          <option value="3">3 أشخاص</option>
+          <option value="4">4 أشخاص</option>
+          <option value="5+">5 أشخاص أو أكثر</option>
+        </select>
+
+        <textarea name="notes"
+                  placeholder="ملاحظات إضافية (اختياري)"></textarea>
+
+        <button class="btn" type="submit">إرسال طلب الحجز</button>
+      </form>
+      <p id="message" role="status"></p>
+    </section>
+
+    <section id="contact">
+      <h2>📍 معلومات الاتصال</h2>
+      <p>العنوان: أضف عنوان مطعمك هنا.</p>
+      <p>الهاتف: أضف رقم هاتف المطعم هنا.</p>
+      <p>أوقات العمل: أضف ساعات العمل هنا.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>مذاق تونس © 2026 - جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById("bookingForm");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      document.getElementById("message").textContent =
+        "تم اختبار النموذج بنجاح! هذا طلب تجريبي، ولم يُرسل إلى المطعم.";
+
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
